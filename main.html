@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Kit Site</title>
+    <link rel="stylesheet" href="./css/import.css">
+    <style>
+        .header-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .header-right a {
+            margin-left: 10px;
+            font-size: 0.9em;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .header-right a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <a href="#home"><img src="./img/LOGO.png" width="150px" height="80px" alt="welcome to Tajam"></a>
+            </h1>
+            <nav>
+                <a href="#home">신제품</a>
+                <a href="#products">베스트</a>
+                <a href="#about">이벤트</a>
+                <a href="#contact">리뷰</a>
+            </nav>
+            <div class="header-right">
+                <a href="login.html">로그인</a>
+                <a href="signup.html">회원가입</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to Meal Kit Site</h2>
+                <p>Discover our delicious meal kits and enjoy cooking at home.</p>
+                <button onclick="scrollToSection('products')">Shop Now</button>
+            </div>
+        </section>
+        <section id="products" class="products">
+            <div class="container">
+                <div class="product-list"></div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="container"></div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions, feel free to reach out to us!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meal Kit Site. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
