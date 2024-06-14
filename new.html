@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>신규 제품</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"  href="new.css">
+    <style>
+        .header-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .header-right a {
+            margin-left: 10px;
+            font-size: 0.9em;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .header-right a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>신규 제품</h1>
+        <div class="container">
+            <h1>
+                <a href="./index.html"><img src="./LOGO.png" width="150px" height="80px" alt="welcome to Tajam"></a>
+            </h1>
+            <nav>
+                <a href="./new.html">신제품</a>
+                <a href="best">베스트</a>
+                <a href="#event">이벤트</a>
+                <a href="#review">리뷰</a>
+            </nav>
+            <div class="header-right">
+                <a href="./login.html">로그인</a>
+                <a href="./signup.html">회원가입</a>
+            </div>
+        </div>
+        <h2>신규 제품</h2>
     </header>
     <main>
         <div class="product-list">
@@ -16,7 +47,7 @@
                 <img src="./six.png" alt="대파 육개장" width="200px" height="200px">
                 <div class="product-info">
                     <h2>[육대장] 대파 육개장</h2>
-                    <p class="price"><span class="discount">11%</span> 12,400원 <span class="original-price">13,900원</span></p>
+                    <p class="price"><span class="discount">11%</span> 12,400원 </p>
                     <div class="rating">
                     </div>
                 </div>
@@ -34,8 +65,8 @@
                 <img src="./den.png" alt="된장찌개" width="200px" height="200px">
                 <div class="product-info">
                     <h2>[이차돌] 된장찌개</h2>
-                    <p class="price"><span class="discount">11%</span> 8,900원 <span class="original-price">9,900원</span></p>
-                    <p class="details">냉장 (1-2인)</p>
+                    <p class="price"><span class="discount">11%</span> 8,900원 </p>
+                    <p class="details"></p>
                     <div class="rating">
                     </div>
                 </div>
@@ -45,7 +76,7 @@
                 <div class="product-info">
                     <h2>[요리왕비룡] 돼지고기 김치찌개</h2>
                     <p class="price">12,900원</p>
-                    <p class="details">냉장 (2인)</p>
+                    
                     <div class="rating">
                     </div>
                 </div>

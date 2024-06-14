@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    
+    margin: 0 auto;
+}
+
+header {
+    background-color:#161616;
+    color: #eee6e6;
+    padding:  1%;
+    
+    text-align: center;
+   
+}
+
+header nav a {
+    color: #eceaea;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.hero {
+    
+    background-image: url('hero-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.products, .about, .contact {
+    padding: 2rem 0;
+   
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.product {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: calc(33.333% - 2rem);
+    box-sizing: border-box;
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+form label {
+    width: 100%;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+h1{display:flex;
+
+}
+h1>nav{
+    width: 1200px;
+   display: flex;
+   margin-left: 600px;
+}
+h2{
+    font-size: small;
+}
