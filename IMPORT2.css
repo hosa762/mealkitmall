@@ -14,7 +14,7 @@ body {
 header {
     background-color:#161616;
     color: #eee6e6;
-    padding:  1%;
+    padding: 1rem 0;
     
     text-align: center;
    
@@ -106,16 +106,15 @@ form button {
     width: 100%;
     padding: 0.5rem;
 }
-
-h1{display:flex;
+main{
     
+    background-size:cover ;
+}
+h1{display:flex;
 
 }
 h1>nav{
     width: 1200px;
    display: flex;
    margin-left: 600px;
-}
-h2{
-    font-size: small;
 }

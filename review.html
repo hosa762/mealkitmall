@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Kit Site</title>
+    <link rel="stylesheet" href="./IMPORT2.css">
+    <style>
+        .header-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .header-right a {
+            margin-left: 10px;
+            font-size: 0.9em;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .header-right a:hover {
+            text-decoration: underline;
+        }
+        .faq-container {
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 100px auto;
+        }
+        .faq-container h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .faq-item {
+            border-top: 1px solid #000;
+            padding: 15px 0;
+            font-size: 1.2em;
+            cursor: pointer;
+            position: relative;
+        }
+        .faq-item:last-child {
+            border-bottom: 1px solid #000;
+        }
+        .faq-answer {
+            display: none;
+            font-size: 1em;
+            padding-top: 10px;
+            color: #555;
+            margin-top: 10px;
+            border-top: 1px solid #ccc;
+        }
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer .contact-info {
+            margin: 10px 0;
+        }
+        footer .contact-info p {
+            display: inline;
+            margin-right: 10px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <a href="./index.html"><img src="./LOGO.png" width="150px" height="80px" alt="welcome to Tajam"></a>
+            </h1>
+            <nav>
+                <a href="./new.html">신제품</a>
+                <a href="best">베스트</a>
+                <a href="#gift">선물하기</a>
+                <a href="#event">이벤트</a>
+            </nav>
+            <div class="header-right">
+                <a href="./login.html">로그인</a>
+                <a href="./signup.html">회원가입</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="faq-container">
+            <h1>자주묻는 질문 TOP5</h1>
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                주문을 취소 하고 싶어요! 배송희망일 변경하고 싶어요!
+                <div class="faq-answer">배송일이 지정되는 주문제작 신선식품으로 고객님께서 직접 취소나 변경 처리가 어렵습니다.</div>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                상품을 수령 후, 다음날 사용해도 되나요?
+                <div class="faq-answer">제품별로 냉장 또는 냉동 보관하시고 소비기간내에 취식을 권장드립니다.</div>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                제주/도서산간 지역도 배송되나요?
+                <div class="faq-answer">제주, 도서산간지역은 배송 지연 및 상품 훼손의 우려가 있어 배송을 제한하고 있습니다. </div>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                배송 방법은 어떻게 되나요?
+                <div class="faq-answer">롯데택배로 발송되며, 택배배송은 발송 후, 다음날 도착을 원칙으로 합니다. 손님초대일 당일에 택배 도착 설정은 권장하지 않으며, 가급적 전날 수령 후, 냉장 보관하신 후, 다음날 음식을 사용하기를 권장합니다.</div>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer(this)">
+                택배로 배송받는날을 선택할 수 있나요?
+                <div class="faq-answer">택배 배송의 경우, 요청하신 배송받는날 내 배송만을 책임집니다.</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <p><strong>상호명:</strong> 키트웨이</p>
+                <p><strong>대표자:</strong> 박서진</p>
+                <p><strong>사업자등록번호:</strong> 725-88-12345</p>
+                <p><strong>주소:</strong> 경기도 파주시 용상골길</p>
+                <p><strong>대표번호:</strong> 1234-5678</p>
+                <p><strong>팩스번호:</strong> 02-527-0195</p>
+                <p><strong>광고/마케팅 문의:</strong> jellyforyo@gmail.com</p>
+                <p><strong>개인정보관리자:</strong> 박서진</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAnswer(faqItem) {
+            const answer = faqItem.querySelector('.faq-answer');
+            if (answer.style.display === 'none' || !answer.style.display) {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

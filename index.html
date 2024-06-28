@@ -20,6 +20,28 @@
         .header-right a:hover {
             text-decoration: underline;
         }
+        footer {
+            background-color: #000000; 
+            color: #ffffff; 
+            padding: 20px;
+            text-align: center;
+            font-size: 15px; 
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        footer .contact-info {
+            margin: 10px 0;
+        }
+        footer .contact-info p {
+            display: inline;
+            margin-right: 10px; 
+            font-size: 0.8em; 
+        }
     </style>
 </head>
 <body>
@@ -30,9 +52,9 @@
             </h1>
             <nav>
                 <a href="./new.html">신제품</a>
-                <a href="best">베스트</a>
+                <a href="./best.html">베스트</a>
+                <a href="#gift">선물하기</a>
                 <a href="#event">이벤트</a>
-                <a href="#review">리뷰</a>
             </nav>
             <div class="header-right">
                 <a href="./login.html">로그인</a>
@@ -45,7 +67,6 @@
             <div class="container">
                 <h2>Welcome to Meal Kit Site</h2>
                 <p>Discover our delicious meal kits and enjoy cooking at home.</p>
-                <button onclick="scrollToSection('products')">Shop Now</button>
             </div>
         </section>
         <section id="products" class="products">
@@ -58,14 +79,23 @@
         </section>
         <section id="contact" class="contact">
             <div class="container">
-                <h2>  <a href="#review">문의하기</a></h2>
+                <h2>  <a href="./review.html">문의하기</a></h2>
                 <p>If you have any questions, feel free to reach out to us!</p>
             </div>
         </section>
     </main>
     <footer>
         <div class="container">
-            <p>&copy; 2024 Meal Kit Site. All rights reserved.</p>
+            <div class="contact-info">
+                <p><strong>상호명:</strong> 키트웨이</p>
+                <p><strong>대표자:</strong> 박서진</p>
+                <p><strong>사업자등록번호:</strong> 725-88-12345</p>
+                <p><strong>주소:</strong> 경기도 파주시 용상골길</p>
+                <p><strong>대표번호:</strong> 1234-5678</p>
+                <p><strong>팩스번호:</strong> 02-527-0195</p>
+                <p><strong>광고/마케팅 문의:</strong> jellyforyo@gmail.com</p>
+                <p><strong>개인정보관리자:</strong> 박서진</p>
+            </div>
         </div>
     </footer>
 </body>
