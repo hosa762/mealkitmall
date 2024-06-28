@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>신규 제품</title>
+    <title>인기 제품</title>
     <link rel="stylesheet" href="./new.css">
     <style>
         .header-right {
@@ -92,6 +92,46 @@
         .rating {
             margin-top: 10px;
         }
+        .events-section {
+            margin: 40px 0;
+        }
+        .events-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .events-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .event-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .event-item:hover {
+            transform: translateY(-5px);
+        }
+        .event-item img {
+            width: 100%;
+            height: auto;
+        }
+        .event-info {
+            padding: 15px;
+        }
+        .event-info h3 {
+            font-size: 1.2em;
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .event-info p {
+            margin: 5px 0;
+            color: #777;
+        }
         footer {
             background-color: #000000;
             color: #ffffff;
@@ -125,7 +165,7 @@
             <nav>
                 <a href="./new.html">신제품</a>
                 <a href="./best.html">베스트</a>
-                <a href="#./gift.html">선물하기</a>
+                <a href="./gift.html">선물하기</a>
                 <a href="./event.html">이벤트</a>
             </nav>
             <div class="header-right">
@@ -133,84 +173,42 @@
                 <a href="./signup.html">회원가입</a>
             </div>
         </div>
-        <h2>신규 제품</h2>
     </header>
     <main>
         <div class="container">
-            <div class="product-list">
-                <div class="product-item">
-                    <img src="./six.png" alt="대파 육개장">
-                    <div class="product-info">
-                        <h2>[육대장] 대파 육개장</h2>
-                        <p class="price"><span class="discount">11%</span> 12,400원</p>
-                        <div class="rating">
+            <section class="events-section">
+                <h2>이벤트</h2>
+                <div class="events-list">
+                    <div class="event-item">
+                        <img src="./event1.png" alt="이벤트 이미지 1">
+                        <div class="event-info">
+                            <h3>신규회원 가입 혜택</h3>
+                            <p>2024.03.01 - 2024.12.31</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <img src="event2.png" alt="이벤트 이미지 2">
+                        <div class="event-info">
+                            <h3>MYCHEF FESTA 2024 상반기 결산</h3>
+                            <p>2024.05.30 - 2024.12.31</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <img src="event3.png" alt="이벤트 이미지 3">
+                        <div class="event-info">
+                            <h3>구매후기 작성 시 포인트 적립</h3>
+                            <p>2024.06.10 - 2024.12.31</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <img src="event4.png" alt="이벤트 이미지 4">
+                        <div class="event-info">
+                            <h3>서울시 가정행복 밀키트 할인지원</h3>
+                            <p>2024.05.30 - 2024.12.31</p>
                         </div>
                     </div>
                 </div>
-                <div class="product-item">
-                    <img src="./hang.png" alt="황태콩나물국밥">
-                    <div class="product-info">
-                        <h2>[현대옥] 황태 콩나물국밥</h2>
-                        <p class="price">10,900원</p>
-                        <div class="rating">
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="./den.png" alt="된장찌개">
-                    <div class="product-info">
-                        <h2>[이차돌] 된장찌개</h2>
-                        <p class="price"><span class="discount">11%</span> 8,900원</p>
-                        <div class="rating">
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="./pigden.png" alt="돼지고기 김치찌개">
-                    <div class="product-info">
-                        <h2>[요리왕비룡] 돼지고기 김치찌개</h2>
-                        <p class="price">12,900원</p>
-                        <div class="rating">
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="./blackpig.png" alt="푸짐한 돼지불백">
-                    <div class="product-info">
-                        <h2>[하남돼지집] 푸짐한 돼지불백</h2>
-                        <p class="price">16,900원</p>
-                        <div class="rating">
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="./cowden.png" alt="소고기 된장전골">
-                    <div class="product-info">
-                        <h2>[새벽집] 소고기 된장전골</h2>
-                        <p class="price">15,900원</p>
-                        <div class="rating">
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="./steak.png" alt="스테이크">
-                    <div class="product-info">
-                        <h2>갈릭비프스테이크</h2>
-                        <p class="price">18,900원</p>
-                        <div class="rating">
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item">
-                    <img src="./solopig.png" alt="나혼자 돼지고기 김치찜">
-                    <div class="product-info">
-                        <h2>나혼자 돼지고기 김치찜</h2>
-                        <p class="price">9,900원</p>
-                        <div class="rating">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
     </main>
     <footer>
@@ -227,5 +225,16 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleAnswer(faqItem) {
+            const answer = faqItem.querySelector('.faq-answer');
+            if (answer.style.display === 'none' || !answer.style.display) {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
